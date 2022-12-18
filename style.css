@@ -1,10 +1,15 @@
 :root {--main:rgb(132, 7, 132);
     --gray:rgb(56, 54, 54);
+    --pink:lightpink
 
 }
+::selection {
+    background-color: var(--pink);
+}
+
 body {
     color: white;
-    background-color: rgb(56, 54, 54);
+    background-color: var(--gray);
     font-family: Arial, Helvetica, sans-serif;
     
     
@@ -12,6 +17,7 @@ body {
 header p {
     text-align: center;
     margin: 10px;
+    padding-bottom: 15px;
 
 }
 h1 {
@@ -19,32 +25,35 @@ h1 {
     margin: 30px;
     color: var(--main);
     font-size: 40px;
+    
 }
-
 
 p{
     font-size: 14px;
     
 }
-
 main {
-    
     flex-wrap: wrap;
     display: flex;
 
     
 }
 .card {
-    
-    border:2px dashed white;
+    border:2px dashed var(--pink);
     margin: 25px;
     padding: 10px;
     flex: 300px;
     
 
 }
+
+.card:hover, h2:hover {
+    box-shadow: 0px 0px 15px var(--pink);
+    transition: all 0.5s ease-in-out;
+}
+
 h2 {
-    border: 2px solid white;
+    border: 2px solid var(--pink);
     border-radius: 10px;
     color: var(--main);
     padding: 20px;
@@ -54,19 +63,22 @@ h2 {
 
 }
 
+code {
+    user-select: all;
+}
+
+
 pre {
-    
     border: 2px;
     border-radius: 10px;
     background-color: pink;
     background: linear-gradient(rgba(140, 30, 140), rgba(143, 68, 143), rgba(154, 121, 154) 100% );
     padding: 15px;
     margin: 15px;
-    
-    
-
+   
 }
 
 footer {
     text-align: center;
+    padding-bottom: 20px;
 }
