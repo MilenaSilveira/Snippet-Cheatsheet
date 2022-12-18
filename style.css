@@ -1,0 +1,72 @@
+:root {--main:rgb(132, 7, 132);
+    --gray:rgb(56, 54, 54);
+
+}
+body {
+    color: white;
+    background-color: rgb(56, 54, 54);
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+header p {
+    text-align: center;
+    margin: 10px;
+
+}
+h1 {
+    text-align: center;
+    margin: 30px;
+    color: var(--main);
+    font-size: 40px;
+}
+
+
+p{
+    font-size: 14px;
+    
+}
+
+main {
+    
+    flex-wrap: wrap;
+    display: flex;
+
+    
+}
+.card {
+    
+    border:2px dashed white;
+    margin: 25px;
+    padding: 10px;
+    flex: 300px;
+    
+
+}
+h2 {
+    border: 2px solid white;
+    border-radius: 10px;
+    color: var(--main);
+    padding: 20px;
+    position: relative;
+    top: -35px;
+    background-color: var(--gray);
+
+}
+
+pre {
+    
+    border: 2px;
+    border-radius: 10px;
+    background-color: pink;
+    background: linear-gradient(rgba(140, 30, 140), rgba(143, 68, 143), rgba(154, 121, 154) 100% );
+    padding: 15px;
+    margin: 15px;
+    
+    
+
+}
+
+footer {
+    text-align: center;
+}
